@@ -9,29 +9,59 @@ body {
 }
 
 .board {
+    position: relative;
     margin: calc(50vh - 15vw) auto 0;
     width: 30vw;
     height: 30vw;
     border: 10px solid black;
     font-size: 0;
+
 }
 
-span:nth-of-type(1),
+span:nth-of-type(1) {
+    display: block;
+    position: absolute;
+    background-color: #f00;
+    width: calc(15vw - 10px);
+    height: calc(15vw - 10px);
+    float: left;
+    left: 0;
+    top: 0;
+}
+
 span:nth-of-type(4) {
     display: block;
+    position: absolute;
     background-color: #f00;
-    width: 50%;
-    height: 50%;
+    width: calc(15vw - 10px);
+    height: calc(15vw - 10px);
     float: left;
+    bottom: 0;
+    right: 0;
 }
 
-span:nth-of-type(2),
+
+
+span:nth-of-type(2) {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    width: calc(15vw - 10px);
+    height: calc(15vw - 10px);
+    float: left;
+    top: 0;
+    right: 0;
+}
+
 span:nth-of-type(3) {
     display: block;
+    position: absolute;
     background-color: #fff;
-    width: 50%;
-    height: 50%;
+    width: calc(15vw - 10px);
+    height: calc(15vw - 10px);
     float: left;
+    bottom: 0;
+    left: 0;
 }
 
 h1 {
